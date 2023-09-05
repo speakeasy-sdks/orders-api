@@ -32,9 +32,7 @@ export class Status {
             this.sdkConfiguration.serverDefaults
         );
         const url: string = baseURL.replace(/\/$/, "") + "/status";
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...config?.headers };
         headers["Accept"] = "application/json";
 

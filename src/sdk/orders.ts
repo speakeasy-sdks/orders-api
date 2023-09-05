@@ -49,9 +49,7 @@ export class Orders {
                 throw new Error(`Error serializing request body, cause: ${e.message}`);
             }
         }
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...reqBodyHeaders, ...config?.headers };
         if (reqBody == null || Object.keys(reqBody).length === 0)
             throw new Error("request body is required");
@@ -132,9 +130,7 @@ export class Orders {
             this.sdkConfiguration.serverDefaults
         );
         const url: string = utils.generateURL(baseURL, "/orders/{orderId}", req);
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...config?.headers };
         headers["Accept"] = "*/*";
 
@@ -189,9 +185,7 @@ export class Orders {
             this.sdkConfiguration.serverDefaults
         );
         const url: string = utils.generateURL(baseURL, "/orders/{orderId}", req);
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...config?.headers };
         const queryParams: string = utils.serializeQueryParams(req);
         headers["Accept"] = "application/json";
@@ -270,9 +264,7 @@ export class Orders {
             this.sdkConfiguration.serverDefaults
         );
         const url: string = baseURL.replace(/\/$/, "") + "/orders";
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...config?.headers };
         const queryParams: string = utils.serializeQueryParams(req);
         headers["Accept"] = "application/json";
@@ -367,9 +359,7 @@ export class Orders {
                 throw new Error(`Error serializing request body, cause: ${e.message}`);
             }
         }
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...reqBodyHeaders, ...config?.headers };
         if (reqBody == null || Object.keys(reqBody).length === 0)
             throw new Error("request body is required");
