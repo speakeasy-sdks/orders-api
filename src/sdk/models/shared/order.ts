@@ -35,9 +35,6 @@ export enum OrderStatus {
     Delivered = "delivered",
 }
 
-/**
- * Order
- */
 export class Order extends SpeakeasyBase {
     /**
      * Billing Address

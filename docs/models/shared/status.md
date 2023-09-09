@@ -1,7 +1,5 @@
 # Status
 
-status response
-
 
 ## Fields
 

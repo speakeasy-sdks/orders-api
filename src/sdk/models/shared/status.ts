@@ -5,9 +5,6 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose } from "class-transformer";
 
-/**
- * status response
- */
 export class Status extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "status" })
