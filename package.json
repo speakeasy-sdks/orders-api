@@ -1,6 +1,6 @@
 {
   "name": "orders-api",
-  "version": "1.11.3",
+  "version": "1.11.4",
   "author": "trolololo",
   "scripts": {
     "prepare": "tsc --build"

@@ -7,7 +7,7 @@ import * as errors from "./models/errors";
 import * as operations from "./models/operations";
 import * as shared from "./models/shared";
 import { SDKConfiguration } from "./sdk";
-import { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
+import { AxiosInstance, AxiosRequestConfig, AxiosResponse, RawAxiosRequestHeaders } from "axios";
 
 /**
  * Operations about orders
@@ -50,7 +50,7 @@ export class Orders {
             }
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...reqBodyHeaders, ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...reqBodyHeaders, ...config?.headers };
         if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "application/json";
 
@@ -130,7 +130,7 @@ export class Orders {
         );
         const url: string = utils.generateURL(baseURL, "/orders/{orderId}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...config?.headers };
         headers["Accept"] = "*/*";
 
         headers[
@@ -185,7 +185,7 @@ export class Orders {
         );
         const url: string = utils.generateURL(baseURL, "/orders/{orderId}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...config?.headers };
         const queryParams: string = utils.serializeQueryParams(req);
         headers["Accept"] = "application/json";
 
@@ -264,7 +264,7 @@ export class Orders {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/orders";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...config?.headers };
         const queryParams: string = utils.serializeQueryParams(req);
         headers["Accept"] = "application/json";
 
@@ -359,7 +359,7 @@ export class Orders {
             }
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...reqBodyHeaders, ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...reqBodyHeaders, ...config?.headers };
         if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "application/json";
 
