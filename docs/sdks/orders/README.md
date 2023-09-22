@@ -27,16 +27,16 @@ const sdk = new OrdersApi();
 
 sdk.orders.createOrderAction({
   address: {
-    city: "Edinburg",
-    state: "suscipit",
-    street: "7854 Huel Via",
-    zip: "temporibus",
+    city: "Aufderharbury",
+    state: "repellendus",
+    street: "718 Wolff Light",
+    zip: "quod",
   },
   complete: false,
-  petId: 71036,
-  quantity: 337396,
+  petId: 800911,
+  quantity: 461479,
   shipDate: new Date("2019-01-01T12:00:00Z"),
-  status: OrderStatus.Placed,
+  status: OrderStatus.Approved,
 }).then((res: CreateOrderActionResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,7 +70,7 @@ import { DeleteOrderActionResponse } from "orders-api/dist/sdk/models/operations
 const sdk = new OrdersApi();
 
 sdk.orders.deleteOrderAction({
-  orderId: 648172,
+  orderId: 780529,
 }).then((res: DeleteOrderActionResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -104,8 +104,8 @@ import { GetOrderActionResponse } from "orders-api/dist/sdk/models/operations";
 const sdk = new OrdersApi();
 
 sdk.orders.getOrderAction({
-  fields: "perferendis",
-  orderId: 368241,
+  fields: "dolorum",
+  orderId: 118274,
 }).then((res: GetOrderActionResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -139,12 +139,12 @@ import { ListOrdersActionResponse } from "orders-api/dist/sdk/models/operations"
 const sdk = new OrdersApi();
 
 sdk.orders.listOrdersAction({
-  after: "repellendus",
-  fields: "sapiente",
-  filters: "quo",
-  limit: 140350,
-  offset: 870013,
-  order: "at",
+  after: "nam",
+  fields: "officia",
+  filters: "occaecati",
+  limit: 143353,
+  offset: 537373,
+  order: "hic",
 }).then((res: ListOrdersActionResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -181,18 +181,18 @@ const sdk = new OrdersApi();
 sdk.orders.updateOrderAction({
   order: {
     address: {
-      city: "Lakewood",
-      state: "quod",
-      street: "457 Carroll Rest",
-      zip: "officia",
+      city: "Lebsackland",
+      state: "commodi",
+      street: "2177 Cullen Mountain",
+      zip: "aspernatur",
     },
     complete: false,
-    petId: 582020,
-    quantity: 143353,
+    petId: 18789,
+    quantity: 324141,
     shipDate: new Date("2019-01-01T12:00:00Z"),
     status: OrderStatus.Approved,
   },
-  orderId: 944669,
+  orderId: 149675,
 }).then((res: UpdateOrderActionResponse) => {
   if (res.statusCode == 200) {
     // handle response

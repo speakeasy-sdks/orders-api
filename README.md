@@ -18,8 +18,6 @@ yarn add https://github.com/speakeasy-sdks/orders-api
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```typescript
 import { OrdersApi } from "orders-api";
 import { CreateOrderActionResponse } from "orders-api/dist/sdk/models/operations";
@@ -29,14 +27,14 @@ const sdk = new OrdersApi();
 
 sdk.orders.createOrderAction({
   address: {
-    city: "Laruecester",
-    state: "quibusdam",
-    street: "8584 Oberbrunner Hill",
-    zip: "iure",
+    city: "Edinburg",
+    state: "suscipit",
+    street: "7854 Huel Via",
+    zip: "temporibus",
   },
   complete: false,
-  petId: 297534,
-  quantity: 891773,
+  petId: 71036,
+  quantity: 337396,
   shipDate: new Date("2019-01-01T12:00:00Z"),
   status: OrderStatus.Placed,
 }).then((res: CreateOrderActionResponse) => {
@@ -63,6 +61,32 @@ sdk.orders.createOrderAction({
 
 * [status](docs/sdks/status/README.md#status) - Return service status
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+
+
+<!-- Start Pagination -->
+# Pagination
+
+Some of the endpoints in this SDK support pagination. To use pagination, you make your SDK calls as usual, but the
+returned response object will have a `next` method that can be called to pull down the next group of results. If the
+return value of `next` is `null`, then there are no more pages to be fetched.
+
+Here's an example of one such pagination call:
+
+
+<!-- End Pagination -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 
