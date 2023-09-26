@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: 52ce04315f673f280d0071e1321050da
   docVersion: 1.0.0
-  speakeasyVersion: 1.89.0
-  generationVersion: 2.125.1
+  speakeasyVersion: 1.91.0
+  generationVersion: 2.129.1
 generation:
   comments:
     disableComments: false
@@ -14,10 +14,10 @@ generation:
   tagNamespacingDisabled: false
 features:
   typescript:
-    core: 2.87.5
+    core: 2.88.0
     globalServerURLs: 2.82.0
 typescript:
-  version: 1.11.5
+  version: 1.12.0
   author: trolololo
   maxMethodParams: 0
   packageName: orders-api
