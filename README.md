@@ -49,7 +49,7 @@ sdk.orders.createOrderAction({
 ## Available Resources and Operations
 
 
-### [Orders](docs/sdks/orders/README.md)
+### [orders](docs/sdks/orders/README.md)
 
 * [createOrderAction](docs/sdks/orders/README.md#createorderaction) - Creates a new order
 * [deleteOrderAction](docs/sdks/orders/README.md#deleteorderaction) - Deletes order
@@ -57,7 +57,7 @@ sdk.orders.createOrderAction({
 * [listOrdersAction](docs/sdks/orders/README.md#listordersaction) - Returns a list of orders
 * [updateOrderAction](docs/sdks/orders/README.md#updateorderaction) - Updates order
 
-### [Status](docs/sdks/status/README.md)
+### [status](docs/sdks/status/README.md)
 
 * [status](docs/sdks/status/README.md#status) - Return service status
 <!-- End SDK Available Operations -->
