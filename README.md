@@ -27,16 +27,16 @@ const sdk = new OrdersApi();
 
 sdk.orders.createOrderAction({
   address: {
-    city: "Edinburg",
-    state: "suscipit",
-    street: "7854 Huel Via",
-    zip: "temporibus",
+    city: "Boynton Beach",
+    state: "Engineer Loan Bedfordshire",
+    street: "Adams Groves",
+    zip: "orange withdrawal",
   },
   complete: false,
-  petId: 71036,
-  quantity: 337396,
+  petId: 601004,
+  quantity: 355253,
   shipDate: new Date("2019-01-01T12:00:00Z"),
-  status: OrderStatus.Placed,
+  status: OrderStatus.Delivered,
 }).then((res: CreateOrderActionResponse) => {
   if (res.statusCode == 200) {
     // handle response

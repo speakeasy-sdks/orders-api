@@ -28,16 +28,16 @@ const sdk = new OrdersApi();
 
 sdk.orders.createOrderAction({
   address: {
-    city: "Aufderharbury",
-    state: "repellendus",
-    street: "718 Wolff Light",
-    zip: "quod",
+    city: "Boynton Beach",
+    state: "Engineer Loan Bedfordshire",
+    street: "Adams Groves",
+    zip: "orange withdrawal",
   },
   complete: false,
-  petId: 800911,
-  quantity: 461479,
+  petId: 601004,
+  quantity: 355253,
   shipDate: new Date("2019-01-01T12:00:00Z"),
-  status: OrderStatus.Approved,
+  status: OrderStatus.Delivered,
 }).then((res: CreateOrderActionResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -71,7 +71,7 @@ import { DeleteOrderActionResponse } from "orders-api/dist/sdk/models/operations
 const sdk = new OrdersApi();
 
 sdk.orders.deleteOrderAction({
-  orderId: 780529,
+  orderId: 514454,
 }).then((res: DeleteOrderActionResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -105,8 +105,8 @@ import { GetOrderActionResponse } from "orders-api/dist/sdk/models/operations";
 const sdk = new OrdersApi();
 
 sdk.orders.getOrderAction({
-  fields: "dolorum",
-  orderId: 118274,
+  fields: "Regional Steel",
+  orderId: 937228,
 }).then((res: GetOrderActionResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -140,12 +140,12 @@ import { ListOrdersActionResponse } from "orders-api/dist/sdk/models/operations"
 const sdk = new OrdersApi();
 
 sdk.orders.listOrdersAction({
-  after: "nam",
-  fields: "officia",
-  filters: "occaecati",
-  limit: 143353,
-  offset: 537373,
-  order: "hic",
+  after: "transmitting Common",
+  fields: "darn convergence coolly",
+  filters: "white",
+  limit: 375563,
+  offset: 8301,
+  order: "Roseville behind Connecticut",
 }).then((res: ListOrdersActionResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -182,18 +182,18 @@ const sdk = new OrdersApi();
 sdk.orders.updateOrderAction({
   order: {
     address: {
-      city: "Lebsackland",
-      state: "commodi",
-      street: "2177 Cullen Mountain",
-      zip: "aspernatur",
+      city: "New Mikecester",
+      state: "deposit ADP",
+      street: "Ford Common",
+      zip: "synthesizing compress Account",
     },
     complete: false,
-    petId: 18789,
-    quantity: 324141,
+    petId: 813469,
+    quantity: 42881,
     shipDate: new Date("2019-01-01T12:00:00Z"),
-    status: OrderStatus.Approved,
+    status: OrderStatus.Delivered,
   },
-  orderId: 149675,
+  orderId: 556087,
 }).then((res: UpdateOrderActionResponse) => {
   if (res.statusCode == 200) {
     // handle response
