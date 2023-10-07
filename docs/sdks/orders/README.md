@@ -21,28 +21,20 @@ Creates a new order
 
 ```typescript
 import { OrdersApi } from "orders-api";
-import { CreateOrderActionResponse } from "orders-api/dist/sdk/models/operations";
 import { OrderStatus } from "orders-api/dist/sdk/models/shared";
 
-const sdk = new OrdersApi();
+(async() => {
+  const sdk = new OrdersApi();
 
-sdk.orders.createOrderAction({
-  address: {
-    city: "Boynton Beach",
-    state: "Engineer Loan Bedfordshire",
-    street: "Adams Groves",
-    zip: "orange withdrawal",
-  },
-  complete: false,
-  petId: 601004,
-  quantity: 355253,
-  shipDate: new Date("2019-01-01T12:00:00Z"),
-  status: OrderStatus.Delivered,
-}).then((res: CreateOrderActionResponse) => {
+  const res = await sdk.orders.createOrderAction({
+    address: {},
+    shipDate: new Date("2019-01-01T12:00:00Z"),
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -66,17 +58,18 @@ Deletes order by ID
 
 ```typescript
 import { OrdersApi } from "orders-api";
-import { DeleteOrderActionResponse } from "orders-api/dist/sdk/models/operations";
 
-const sdk = new OrdersApi();
+(async() => {
+  const sdk = new OrdersApi();
 
-sdk.orders.deleteOrderAction({
-  orderId: 514454,
-}).then((res: DeleteOrderActionResponse) => {
+  const res = await sdk.orders.deleteOrderAction({
+    orderId: 514454,
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -100,18 +93,18 @@ Returns a order orderId
 
 ```typescript
 import { OrdersApi } from "orders-api";
-import { GetOrderActionResponse } from "orders-api/dist/sdk/models/operations";
 
-const sdk = new OrdersApi();
+(async() => {
+  const sdk = new OrdersApi();
 
-sdk.orders.getOrderAction({
-  fields: "Regional Steel",
-  orderId: 937228,
-}).then((res: GetOrderActionResponse) => {
+  const res = await sdk.orders.getOrderAction({
+    orderId: 454071,
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -135,22 +128,16 @@ Returns a list of orders
 
 ```typescript
 import { OrdersApi } from "orders-api";
-import { ListOrdersActionResponse } from "orders-api/dist/sdk/models/operations";
 
-const sdk = new OrdersApi();
+(async() => {
+  const sdk = new OrdersApi();
 
-sdk.orders.listOrdersAction({
-  after: "transmitting Common",
-  fields: "darn convergence coolly",
-  filters: "white",
-  limit: 375563,
-  offset: 8301,
-  order: "Roseville behind Connecticut",
-}).then((res: ListOrdersActionResponse) => {
+  const res = await sdk.orders.listOrdersAction({});
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -174,31 +161,23 @@ Updates order by ID
 
 ```typescript
 import { OrdersApi } from "orders-api";
-import { UpdateOrderActionResponse } from "orders-api/dist/sdk/models/operations";
 import { OrderStatus } from "orders-api/dist/sdk/models/shared";
 
-const sdk = new OrdersApi();
+(async() => {
+  const sdk = new OrdersApi();
 
-sdk.orders.updateOrderAction({
-  order: {
-    address: {
-      city: "New Mikecester",
-      state: "deposit ADP",
-      street: "Ford Common",
-      zip: "synthesizing compress Account",
+  const res = await sdk.orders.updateOrderAction({
+    order: {
+      address: {},
+      shipDate: new Date("2019-01-01T12:00:00Z"),
     },
-    complete: false,
-    petId: 813469,
-    quantity: 42881,
-    shipDate: new Date("2019-01-01T12:00:00Z"),
-    status: OrderStatus.Delivered,
-  },
-  orderId: 556087,
-}).then((res: UpdateOrderActionResponse) => {
+    orderId: 1657,
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

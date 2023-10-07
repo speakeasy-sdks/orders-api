@@ -17,15 +17,16 @@ Status OK will be returned
 
 ```typescript
 import { OrdersApi } from "orders-api";
-import { StatusResponse } from "orders-api/dist/sdk/models/operations";
 
-const sdk = new OrdersApi();
+(async() => {
+  const sdk = new OrdersApi();
 
-sdk.status.status().then((res: StatusResponse) => {
+  const res = await sdk.status.status();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
