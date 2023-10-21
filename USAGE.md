@@ -5,17 +5,18 @@
 import { OrdersApi } from "orders-api";
 import { OrderStatus } from "orders-api/dist/sdk/models/shared";
 
-(async() => {
-  const sdk = new OrdersApi();
+(async () => {
+    const sdk = new OrdersApi();
 
-  const res = await sdk.orders.createOrderAction({
-    address: {},
-    shipDate: new Date("2019-01-01T12:00:00Z"),
-  });
+    const res = await sdk.orders.createOrderAction({
+        address: {},
+        shipDate: new Date("2019-01-01T12:00:00Z"),
+    });
 
-  if (res.statusCode == 200) {
-    // handle response
-  }
+    if (res.statusCode == 200) {
+        // handle response
+    }
 })();
+
 ```
 <!-- End SDK Example Usage -->
