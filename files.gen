@@ -26,12 +26,12 @@ src/sdk/models/operations/getorderaction.ts
 src/sdk/models/operations/listordersaction.ts
 src/sdk/models/operations/updateorderaction.ts
 src/sdk/models/operations/status.ts
-src/sdk/models/operations/index.ts
 src/sdk/models/shared/order.ts
 src/sdk/models/shared/error.ts
 src/sdk/models/shared/status.ts
-src/sdk/models/shared/index.ts
 src/sdk/models/errors/index.ts
+src/sdk/models/operations/index.ts
+src/sdk/models/shared/index.ts
 USAGE.md
 docs/models/operations/createorderactionresponse.md
 docs/models/operations/deleteorderactionrequest.md
@@ -43,7 +43,7 @@ docs/models/operations/listordersactionresponse.md
 docs/models/operations/updateorderactionrequest.md
 docs/models/operations/updateorderactionresponse.md
 docs/models/operations/statusresponse.md
-docs/models/shared/orderaddress.md
+docs/models/shared/address.md
 docs/models/shared/orderstatus.md
 docs/models/shared/order.md
 docs/models/shared/errort.md

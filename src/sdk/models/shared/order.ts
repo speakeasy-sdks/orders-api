@@ -8,7 +8,7 @@ import { Expose, Transform, Type } from "class-transformer";
 /**
  * Billing Address
  */
-export class OrderAddress extends SpeakeasyBase {
+export class Address extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "city" })
     city?: string;
@@ -41,8 +41,8 @@ export class Order extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "address" })
-    @Type(() => OrderAddress)
-    address?: OrderAddress;
+    @Type(() => Address)
+    address?: Address;
 
     @SpeakeasyMetadata()
     @Expose({ name: "complete" })

@@ -1,5 +1,5 @@
 # Status
-(*status*)
+(*.status*)
 
 ## Overview
 
@@ -22,6 +22,7 @@ import { OrdersApi } from "orders-api";
   const sdk = new OrdersApi();
 
   const res = await sdk.status.status();
+
 
   if (res.statusCode == 200) {
     // handle response

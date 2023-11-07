@@ -3,7 +3,7 @@
  */
 
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
-import * as shared from "../shared";
+import * as shared from "../../../sdk/models/shared";
 import { AxiosResponse } from "axios";
 
 export class ListOrdersActionRequest extends SpeakeasyBase {
@@ -58,12 +58,6 @@ export class ListOrdersActionResponse extends SpeakeasyBase {
     error?: shared.ErrorT;
 
     /**
-     * Array of Orders
-     */
-    @SpeakeasyMetadata({ elemType: shared.Order })
-    orders?: shared.Order[];
-
-    /**
      * HTTP response status code for this operation
      */
     @SpeakeasyMetadata()
@@ -74,4 +68,10 @@ export class ListOrdersActionResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
+
+    /**
+     * Array of Orders
+     */
+    @SpeakeasyMetadata({ elemType: shared.Order })
+    classes?: shared.Order[];
 }

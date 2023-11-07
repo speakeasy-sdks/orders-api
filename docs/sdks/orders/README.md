@@ -1,5 +1,5 @@
 # Orders
-(*orders*)
+(*.orders*)
 
 ## Overview
 
@@ -30,6 +30,7 @@ import { OrderStatus } from "orders-api/dist/sdk/models/shared";
     address: {},
     shipDate: new Date("2019-01-01T12:00:00Z"),
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -66,6 +67,7 @@ import { OrdersApi } from "orders-api";
     orderId: 514454,
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -101,6 +103,7 @@ import { OrdersApi } from "orders-api";
     orderId: 454071,
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -133,6 +136,7 @@ import { OrdersApi } from "orders-api";
   const sdk = new OrdersApi();
 
   const res = await sdk.orders.listOrdersAction({});
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -173,6 +177,7 @@ import { OrderStatus } from "orders-api/dist/sdk/models/shared";
     },
     orderId: 1657,
   });
+
 
   if (res.statusCode == 200) {
     // handle response
