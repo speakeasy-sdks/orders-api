@@ -1,5 +1,5 @@
 # Orders
-(*.orders*)
+(*orders*)
 
 ## Overview
 
@@ -31,7 +31,6 @@ import { OrderStatus } from "orders-api/dist/sdk/models/shared";
     shipDate: new Date("2019-01-01T12:00:00Z"),
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -42,14 +41,18 @@ import { OrderStatus } from "orders-api/dist/sdk/models/shared";
 
 | Parameter                                                    | Type                                                         | Required                                                     | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| `request`                                                    | [shared.Order](../../models/shared/order.md)                 | :heavy_check_mark:                                           | The request object to use for the request.                   |
+| `request`                                                    | [shared.Order](../../sdk/models/shared/order.md)             | :heavy_check_mark:                                           | The request object to use for the request.                   |
 | `config`                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config) | :heavy_minus_sign:                                           | Available config options for making requests.                |
 
 
 ### Response
 
-**Promise<[operations.CreateOrderActionResponse](../../models/operations/createorderactionresponse.md)>**
+**Promise<[operations.CreateOrderActionResponse](../../sdk/models/operations/createorderactionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## deleteOrderAction
 
@@ -67,7 +70,6 @@ import { OrdersApi } from "orders-api";
     orderId: 514454,
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -76,16 +78,20 @@ import { OrdersApi } from "orders-api";
 
 ### Parameters
 
-| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| `request`                                                                                  | [operations.DeleteOrderActionRequest](../../models/operations/deleteorderactionrequest.md) | :heavy_check_mark:                                                                         | The request object to use for the request.                                                 |
-| `config`                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                               | :heavy_minus_sign:                                                                         | Available config options for making requests.                                              |
+| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `request`                                                                                      | [operations.DeleteOrderActionRequest](../../sdk/models/operations/deleteorderactionrequest.md) | :heavy_check_mark:                                                                             | The request object to use for the request.                                                     |
+| `config`                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                   | :heavy_minus_sign:                                                                             | Available config options for making requests.                                                  |
 
 
 ### Response
 
-**Promise<[operations.DeleteOrderActionResponse](../../models/operations/deleteorderactionresponse.md)>**
+**Promise<[operations.DeleteOrderActionResponse](../../sdk/models/operations/deleteorderactionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getOrderAction
 
@@ -103,7 +109,6 @@ import { OrdersApi } from "orders-api";
     orderId: 454071,
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -112,16 +117,20 @@ import { OrdersApi } from "orders-api";
 
 ### Parameters
 
-| Parameter                                                                            | Type                                                                                 | Required                                                                             | Description                                                                          |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| `request`                                                                            | [operations.GetOrderActionRequest](../../models/operations/getorderactionrequest.md) | :heavy_check_mark:                                                                   | The request object to use for the request.                                           |
-| `config`                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                         | :heavy_minus_sign:                                                                   | Available config options for making requests.                                        |
+| Parameter                                                                                | Type                                                                                     | Required                                                                                 | Description                                                                              |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `request`                                                                                | [operations.GetOrderActionRequest](../../sdk/models/operations/getorderactionrequest.md) | :heavy_check_mark:                                                                       | The request object to use for the request.                                               |
+| `config`                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                             | :heavy_minus_sign:                                                                       | Available config options for making requests.                                            |
 
 
 ### Response
 
-**Promise<[operations.GetOrderActionResponse](../../models/operations/getorderactionresponse.md)>**
+**Promise<[operations.GetOrderActionResponse](../../sdk/models/operations/getorderactionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## listOrdersAction
 
@@ -137,7 +146,6 @@ import { OrdersApi } from "orders-api";
 
   const res = await sdk.orders.listOrdersAction({});
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -146,16 +154,20 @@ import { OrdersApi } from "orders-api";
 
 ### Parameters
 
-| Parameter                                                                                | Type                                                                                     | Required                                                                                 | Description                                                                              |
-| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| `request`                                                                                | [operations.ListOrdersActionRequest](../../models/operations/listordersactionrequest.md) | :heavy_check_mark:                                                                       | The request object to use for the request.                                               |
-| `config`                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                             | :heavy_minus_sign:                                                                       | Available config options for making requests.                                            |
+| Parameter                                                                                    | Type                                                                                         | Required                                                                                     | Description                                                                                  |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `request`                                                                                    | [operations.ListOrdersActionRequest](../../sdk/models/operations/listordersactionrequest.md) | :heavy_check_mark:                                                                           | The request object to use for the request.                                                   |
+| `config`                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                 | :heavy_minus_sign:                                                                           | Available config options for making requests.                                                |
 
 
 ### Response
 
-**Promise<[operations.ListOrdersActionResponse](../../models/operations/listordersactionresponse.md)>**
+**Promise<[operations.ListOrdersActionResponse](../../sdk/models/operations/listordersactionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## updateOrderAction
 
@@ -178,7 +190,6 @@ import { OrderStatus } from "orders-api/dist/sdk/models/shared";
     orderId: 1657,
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -187,13 +198,17 @@ import { OrderStatus } from "orders-api/dist/sdk/models/shared";
 
 ### Parameters
 
-| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| `request`                                                                                  | [operations.UpdateOrderActionRequest](../../models/operations/updateorderactionrequest.md) | :heavy_check_mark:                                                                         | The request object to use for the request.                                                 |
-| `config`                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                               | :heavy_minus_sign:                                                                         | Available config options for making requests.                                              |
+| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `request`                                                                                      | [operations.UpdateOrderActionRequest](../../sdk/models/operations/updateorderactionrequest.md) | :heavy_check_mark:                                                                             | The request object to use for the request.                                                     |
+| `config`                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                   | :heavy_minus_sign:                                                                             | Available config options for making requests.                                                  |
 
 
 ### Response
 
-**Promise<[operations.UpdateOrderActionResponse](../../models/operations/updateorderactionresponse.md)>**
+**Promise<[operations.UpdateOrderActionResponse](../../sdk/models/operations/updateorderactionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |

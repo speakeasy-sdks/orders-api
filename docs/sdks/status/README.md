@@ -1,5 +1,5 @@
 # Status
-(*.status*)
+(*status*)
 
 ## Overview
 
@@ -23,7 +23,6 @@ import { OrdersApi } from "orders-api";
 
   const res = await sdk.status.status();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -39,5 +38,9 @@ import { OrdersApi } from "orders-api";
 
 ### Response
 
-**Promise<[operations.StatusResponse](../../models/operations/statusresponse.md)>**
+**Promise<[operations.StatusResponse](../../sdk/models/operations/statusresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |

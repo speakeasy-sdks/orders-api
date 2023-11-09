@@ -42,7 +42,7 @@ import { OrderStatus } from "orders-api/dist/sdk/models/shared";
 ## Available Resources and Operations
 
 
-### [.orders](docs/sdks/orders/README.md)
+### [orders](docs/sdks/orders/README.md)
 
 * [createOrderAction](docs/sdks/orders/README.md#createorderaction) - Creates a new order
 * [deleteOrderAction](docs/sdks/orders/README.md#deleteorderaction) - Deletes order
@@ -50,7 +50,7 @@ import { OrderStatus } from "orders-api/dist/sdk/models/shared";
 * [listOrdersAction](docs/sdks/orders/README.md#listordersaction) - Returns a list of orders
 * [updateOrderAction](docs/sdks/orders/README.md#updateorderaction) - Updates order
 
-### [.status](docs/sdks/status/README.md)
+### [status](docs/sdks/status/README.md)
 
 * [status](docs/sdks/status/README.md#status) - Return service status
 <!-- End SDK Available Operations -->
@@ -78,9 +78,36 @@ Here's an example of one such pagination call:
 <!-- Start Error Handling -->
 # Error Handling
 
-Handling errors in your SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 
+## Example
+
+```typescript
+import { OrdersApi } from "orders-api";
+import { OrderStatus } from "orders-api/dist/sdk/models/shared";
+
+(async () => {
+    const sdk = new OrdersApi();
+
+    let res;
+    try {
+        res = await sdk.orders.createOrderAction({
+            address: {},
+            shipDate: new Date("2019-01-01T12:00:00Z"),
+        });
+    } catch (e) {}
+
+    if (res.statusCode == 200) {
+        // handle response
+    }
+})();
+
+```
 <!-- End Error Handling -->
 
 
@@ -167,8 +194,6 @@ const httpClient = axios.create({
 
 const sdk = new OrdersApi({defaultClient: httpClient});
 ```
-
-
 <!-- End Custom HTTP Client -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
