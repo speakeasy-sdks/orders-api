@@ -1,6 +1,4 @@
 <!-- Start SDK Example Usage -->
-
-
 ```typescript
 import { OrdersApi } from "orders-api";
 import { OrderStatus } from "orders-api/dist/sdk/models/shared";
