@@ -32,7 +32,6 @@ src/sdk/models/shared/status.ts
 src/sdk/models/errors/index.ts
 src/sdk/models/operations/index.ts
 src/sdk/models/shared/index.ts
-USAGE.md
 docs/sdk/models/operations/createorderactionresponse.md
 docs/sdk/models/operations/deleteorderactionrequest.md
 docs/sdk/models/operations/deleteorderactionresponse.md
@@ -51,4 +50,5 @@ docs/sdk/models/shared/status.md
 docs/sdks/ordersapi/README.md
 docs/sdks/orders/README.md
 docs/sdks/status/README.md
+USAGE.md
 .gitattributes

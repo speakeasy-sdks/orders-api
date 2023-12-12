@@ -18,7 +18,7 @@ Status OK will be returned
 ```typescript
 import { OrdersApi } from "orders-api";
 
-(async() => {
+async function run() {
   const sdk = new OrdersApi();
 
   const res = await sdk.status.status();
@@ -26,7 +26,9 @@ import { OrdersApi } from "orders-api";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

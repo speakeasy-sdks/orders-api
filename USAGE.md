@@ -1,9 +1,9 @@
-<!-- Start SDK Example Usage -->
+<!-- Start SDK Example Usage [usage] -->
 ```typescript
 import { OrdersApi } from "orders-api";
 import { OrderStatus } from "orders-api/dist/sdk/models/shared";
 
-(async () => {
+async function run() {
     const sdk = new OrdersApi();
 
     const res = await sdk.orders.createOrderAction({
@@ -14,7 +14,9 @@ import { OrderStatus } from "orders-api/dist/sdk/models/shared";
     if (res.statusCode == 200) {
         // handle response
     }
-})();
+}
+
+run();
 
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->

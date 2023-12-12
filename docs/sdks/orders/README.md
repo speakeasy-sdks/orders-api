@@ -23,7 +23,7 @@ Creates a new order
 import { OrdersApi } from "orders-api";
 import { OrderStatus } from "orders-api/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new OrdersApi();
 
   const res = await sdk.orders.createOrderAction({
@@ -34,7 +34,9 @@ import { OrderStatus } from "orders-api/dist/sdk/models/shared";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -63,7 +65,7 @@ Deletes order by ID
 ```typescript
 import { OrdersApi } from "orders-api";
 
-(async() => {
+async function run() {
   const sdk = new OrdersApi();
 
   const res = await sdk.orders.deleteOrderAction({
@@ -73,7 +75,9 @@ import { OrdersApi } from "orders-api";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -102,7 +106,7 @@ Returns a order orderId
 ```typescript
 import { OrdersApi } from "orders-api";
 
-(async() => {
+async function run() {
   const sdk = new OrdersApi();
 
   const res = await sdk.orders.getOrderAction({
@@ -112,7 +116,9 @@ import { OrdersApi } from "orders-api";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -141,7 +147,7 @@ Returns a list of orders
 ```typescript
 import { OrdersApi } from "orders-api";
 
-(async() => {
+async function run() {
   const sdk = new OrdersApi();
 
   const res = await sdk.orders.listOrdersAction({});
@@ -149,7 +155,9 @@ import { OrdersApi } from "orders-api";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -179,7 +187,7 @@ Updates order by ID
 import { OrdersApi } from "orders-api";
 import { OrderStatus } from "orders-api/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new OrdersApi();
 
   const res = await sdk.orders.updateOrderAction({
@@ -193,7 +201,9 @@ import { OrderStatus } from "orders-api/dist/sdk/models/shared";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
