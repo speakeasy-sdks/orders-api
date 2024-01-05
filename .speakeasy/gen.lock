@@ -1,0 +1,71 @@
+lockVersion: 2.0.0
+id: 0e7123f0-47e4-41e5-b03a-c2f7da151c19
+management:
+  docChecksum: 52ce04315f673f280d0071e1321050da
+  docVersion: 1.0.0
+  speakeasyVersion: internal
+  generationVersion: 2.225.2
+  releaseVersion: 2.1.1
+  configChecksum: 89e9a37e3bf9fc296da0fca73da1a01c
+  repoURL: https://github.com/speakeasy-sdks/orders-api.git
+  repoSubDirectory: .
+  installationURL: https://github.com/speakeasy-sdks/orders-api
+features:
+  typescript:
+    core: 3.4.1
+    globalServerURLs: 2.82.1
+generatedFiles:
+  - src/sdk/orders.ts
+  - src/sdk/status.ts
+  - src/sdk/sdk.ts
+  - .eslintrc.yml
+  - jest.config.js
+  - package-lock.json
+  - package.json
+  - src/index.ts
+  - src/internal/utils/contenttype.ts
+  - src/internal/utils/headers.ts
+  - src/internal/utils/index.ts
+  - src/internal/utils/pathparams.ts
+  - src/internal/utils/queryparams.ts
+  - src/internal/utils/requestbody.ts
+  - src/internal/utils/retries.ts
+  - src/internal/utils/security.ts
+  - src/internal/utils/utils.ts
+  - src/sdk/index.ts
+  - src/sdk/models/errors/sdkerror.ts
+  - src/sdk/types/index.ts
+  - src/sdk/types/rfcdate.ts
+  - tsconfig.json
+  - src/sdk/models/operations/createorderaction.ts
+  - src/sdk/models/operations/deleteorderaction.ts
+  - src/sdk/models/operations/getorderaction.ts
+  - src/sdk/models/operations/listordersaction.ts
+  - src/sdk/models/operations/updateorderaction.ts
+  - src/sdk/models/operations/status.ts
+  - src/sdk/models/shared/order.ts
+  - src/sdk/models/shared/error.ts
+  - src/sdk/models/shared/status.ts
+  - src/sdk/models/errors/index.ts
+  - src/sdk/models/operations/index.ts
+  - src/sdk/models/shared/index.ts
+  - docs/sdk/models/operations/createorderactionresponse.md
+  - docs/sdk/models/operations/deleteorderactionrequest.md
+  - docs/sdk/models/operations/deleteorderactionresponse.md
+  - docs/sdk/models/operations/getorderactionrequest.md
+  - docs/sdk/models/operations/getorderactionresponse.md
+  - docs/sdk/models/operations/listordersactionrequest.md
+  - docs/sdk/models/operations/listordersactionresponse.md
+  - docs/sdk/models/operations/updateorderactionrequest.md
+  - docs/sdk/models/operations/updateorderactionresponse.md
+  - docs/sdk/models/operations/statusresponse.md
+  - docs/sdk/models/shared/address.md
+  - docs/sdk/models/shared/orderstatus.md
+  - docs/sdk/models/shared/order.md
+  - docs/sdk/models/shared/errort.md
+  - docs/sdk/models/shared/status.md
+  - docs/sdks/ordersapi/README.md
+  - docs/sdks/orders/README.md
+  - docs/sdks/status/README.md
+  - USAGE.md
+  - .gitattributes

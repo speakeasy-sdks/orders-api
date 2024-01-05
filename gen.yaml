@@ -1,21 +1,10 @@
-configVersion: 1.0.0
-management:
-  docChecksum: 52ce04315f673f280d0071e1321050da
-  docVersion: 1.0.0
-  speakeasyVersion: 1.127.0
-  generationVersion: 2.220.0
+configVersion: 2.0.0
 generation:
-  comments: {}
   sdkClassName: orders-api
-  repoURL: https://github.com/speakeasy-sdks/orders-api.git
   usageSnippets:
     optionalPropertyRendering: withExample
   fixes:
     nameResolutionDec2023: false
-features:
-  typescript:
-    core: 3.3.9
-    globalServerURLs: 2.82.1
 typescript:
   version: 2.1.1
   author: trolololo
@@ -30,9 +19,7 @@ typescript:
       shared: sdk/models/shared
       webhooks: sdk/models/webhooks
   inputModelSuffix: input
-  installationURL: https://github.com/speakeasy-sdks/orders-api
   maxMethodParams: 0
   outputModelSuffix: output
   packageName: orders-api
-  repoSubDirectory: .
   templateVersion: v1
